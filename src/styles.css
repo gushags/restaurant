@@ -1,0 +1,154 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&family=Ranchers&display=swap");
+
+@font-face {
+  font-family: "IM FELL French Canon";
+  src: url("./fonts/IM_FELL_French_Canon_Roman.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IM FELL French Canon";
+  src: url("./fonts/IM_FELL_French_Canon_Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ranchers";
+  src: url("./fonts/Ranchers-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --omlette-blue: hsl(172, 90%, 81%, 0.5);
+  --pizza-orange: hsl(352, 90%, 81%, 0.5);
+}
+html {
+  background: linear-gradient(
+    to right,
+    var(--omlette-blue) 0%,
+    var(--omlette-blue) 50%,
+    var(--pizza-orange) 50%,
+    var(--pizza-orange) 50%
+  );
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 10px auto;
+}
+button {
+  width: max-content;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+}
+
+#home {
+  background-color: var(--pizza-orange);
+}
+
+#menu {
+  background: linear-gradient(
+    to right,
+    var(--pizza-orange) 0%,
+    var(--pizza-orange) 50%,
+    var(--omlette-blue) 50%,
+    var(--omlette-blue) 50%
+  );
+}
+
+#about {
+  background-color: var(--omlette-blue);
+}
+.hero {
+  height: clamp(150px, 40vh, 340px);
+  background-image: url("./img/hero-restaurant.jpg");
+  background-size: cover;
+}
+.welcome {
+  text-align: center;
+}
+
+.welcome h4 {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+#divided {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#pizza {
+  width: 80%;
+  text-align: right;
+}
+#omelette {
+  width: 80%;
+}
+
+#omelette h1 {
+  font-family: "IM FELL French Canon", serif;
+  font-style: italic;
+  font-size: 6.25rem;
+  margin-left: 15px;
+}
+
+#omelette h3,
+#omelette h4 {
+  font-family: "IM FELL French Canon", serif;
+  margin-top: 19px;
+  margin-left: 7px;
+  font-size: 2.1rem;
+}
+
+#omelette h5 {
+  font-family: "IM FELL French Canon", serif;
+  letter-spacing: 0.1rem;
+  margin-top: 27px;
+  margin-left: 7px;
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+#pizza {
+  margin-left: auto;
+}
+
+#pizza h1 {
+  font-family: "Ranchers", sans-serif;
+  word-spacing: 15px;
+  letter-spacing: 0.2rem;
+  font-size: 6rem;
+  margin-right: 10px;
+}
+
+#pizza h3,
+#pizza h4 {
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-top: 20px;
+  margin-right: 7px;
+  font-size: 2rem;
+}
+
+#pizza h5 {
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  margin-right: 7px;
+  font-size: 1.25rem;
+  font-style: italic;
+}
