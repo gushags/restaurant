@@ -1,0 +1,69 @@
+/* menu.css */
+#menu-headline {
+  text-align: center;
+}
+#menu-headline h1 {
+  font-size: 5rem;
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.2rem;
+}
+#menu-headline span {
+  font-size: 5.5rem;
+  font-family: "IM FELL French Canon", serif;
+}
+.paired {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.p-card,
+.o-card {
+  background-color: white;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+.p-card img,
+.o-card img {
+  margin-bottom: 20px;
+}
+
+.p-card {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.p-card h3,
+.p-card p,
+.p-card h4 {
+  margin: 7px 10px 7px 10px;
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.05rem;
+  word-spacing: 3px;
+}
+
+.o-card h3,
+.o-card p,
+.o-card h4 {
+  margin: 7px 10px 7px 10px;
+  font-family: "IM FELL French Canon", serif;
+}
+
+.o-card {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.food {
+  object-fit: cover;
+}
+
+.pair-png {
+  display: flex;
+  justify-content: center;
+}
+.pair-png img {
+  width: 90px;
+}

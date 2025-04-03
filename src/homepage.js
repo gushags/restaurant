@@ -38,7 +38,7 @@ function createHomepage() {
   dishes.textContent = "Two favorite dishes.";
   omelette.appendChild(dishes);
   const dining = document.createElement("h4");
-  dining.textContent = "dining experience";
+  dining.textContent = "dining experience.";
   omelette.appendChild(dining);
   const to = document.createElement("h5");
   to.textContent = "to...";
