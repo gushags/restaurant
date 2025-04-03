@@ -1,24 +1,6 @@
 // homepage.js
 
 function createHomepage() {
-  // Create buttons
-  const nav = document.querySelector("nav");
-
-  const home = document.createElement("button");
-  const menu = document.createElement("button");
-  const about = document.createElement("button");
-
-  home.textContent = "Home";
-  home.id = "home";
-  menu.textContent = "Menu";
-  menu.id = "menu";
-  about.textContent = "About";
-  about.id = "about";
-
-  nav.appendChild(home);
-  nav.appendChild(menu);
-  nav.appendChild(about);
-
   // main section
   const content = document.getElementById("content");
 
