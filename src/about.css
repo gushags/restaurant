@@ -1,1 +1,64 @@
 /* about.css */
+#about-title {
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#about-title span {
+  font-family: "IM FELL French Canon", serif;
+  font-style: italic;
+  font-size: 4.1rem;
+}
+
+#chefs {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 1fr;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#pizza-chef,
+#omelette-chef {
+  background-color: white;
+  padding: 7px;
+  border-radius: 7px;
+  height: 600px;
+}
+
+#pizza-chef img,
+#omelette-chef img {
+  margin-bottom: 20px;
+}
+
+#pizza-chef {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+#pizza-chef h3,
+#pizza-chef p {
+  margin: 7px 10px 7px 10px;
+  font-family: "Ranchers", sans-serif;
+  letter-spacing: 0.05rem;
+  word-spacing: 3px;
+}
+
+#omelette-chef h3,
+#omelette-chef p {
+  margin: 7px 10px 7px 10px;
+  font-family: "IM FELL French Canon", serif;
+}
+
+#omelette-chef em {
+  font-family: "IM FELL French Canon", serif;
+  font-style: italic;
+}
+
+#omelette-chef {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
