@@ -28,11 +28,9 @@ aboutButton.addEventListener("click", () => {
 });
 
 function clearContent() {
-  const content = document.querySelector("#id");
+  const content = document.getElementById("content");
   // remove all children of #content
-  while (content.firstChild) {
-    content.removeChild(content.lastChild);
-  }
+  content.replaceChildren();
 }
 
 // Initial page write
